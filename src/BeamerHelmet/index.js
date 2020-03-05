@@ -1,3 +1,4 @@
+import React from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 
@@ -6,7 +7,7 @@ import { beamerInitialize } from '../';
 const BeamerHelmet = ({ id, url }) => (
   <Helmet>
     { beamerInitialize(id, url) }
-</Helmet>
+  </Helmet>
 );
 
 BeamerHelmet.propTypes = {

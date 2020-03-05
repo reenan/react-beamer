@@ -10,10 +10,9 @@ function beamerInitialize(id) {
 
   if (!id) {
     throw Error('Must provide "id". https://app.getbeamer.com/embed');
-  } // Variable used by Beamer
+  }
 
-
-  var beamer_config = {
+  window.beamer_config = {
     product_id: id
   };
   var beamerURL = url || 'https://app.getbeamer.com/js/beamer-embed.js';

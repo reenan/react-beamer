@@ -3,8 +3,7 @@ export default function beamerInitialize (id, url = false) {
     throw Error('Must provide "id". https://app.getbeamer.com/embed');
   }
 
-  // Variable used by Beamer
-  const beamer_config = {
+  window.beamer_config = {
     product_id: id
   };
 

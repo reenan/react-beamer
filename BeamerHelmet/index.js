@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+var _react = _interopRequireDefault(require("react"));
+
 var _reactHelmet = _interopRequireDefault(require("react-helmet"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
@@ -18,7 +20,7 @@ var BeamerHelmet = (_ref) => {
     id,
     url
   } = _ref;
-  return React.createElement(_reactHelmet.default, null, (0, _.beamerInitialize)(id, url));
+  return _react.default.createElement(_reactHelmet.default, null, (0, _.beamerInitialize)(id, url));
 };
 
 BeamerHelmet.propTypes = {
