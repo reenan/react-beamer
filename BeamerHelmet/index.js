@@ -1,0 +1,32 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _reactHelmet = _interopRequireDefault(require("react-helmet"));
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _ = require("../");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var BeamerHelmet = (_ref) => {
+  var {
+    id,
+    url
+  } = _ref;
+  return React.createElement(_reactHelmet.default, null, (0, _.beamerInitialize)(id, url));
+};
+
+BeamerHelmet.propTypes = {
+  id: _propTypes.default.string.isRequired,
+  url: _propTypes.default.string.isRequired
+};
+BeamerHelmet.defaultProps = {
+  url: 'https://app.getbeamer.com/js/beamer-embed.js'
+};
+var _default = BeamerHelmet;
+exports.default = _default;
