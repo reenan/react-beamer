@@ -1,0 +1,21 @@
+{
+  "name": "react-beamer",
+  "author": "Renan Souza <0renan.souza@gmail.com>",
+  "version": "1.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "parse": "babel ./src --out-dir ./"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4"
+  }
+}
