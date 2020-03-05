@@ -1,7 +1,7 @@
 {
   "name": "react-beamer",
   "author": "Renan Souza <0renan.souza@gmail.com>",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "private": false,
   "scripts": {
