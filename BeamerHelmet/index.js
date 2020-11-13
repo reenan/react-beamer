@@ -20,7 +20,7 @@ var BeamerHelmet = (_ref) => {
     id,
     url
   } = _ref;
-  return _react.default.createElement(_reactHelmet.default, null, (0, _.beamerInitialize)(id, url));
+  return /*#__PURE__*/_react.default.createElement(_reactHelmet.default, null, (0, _.beamerInitialize)(id, url));
 };
 
 BeamerHelmet.propTypes = {

@@ -1,10 +1,15 @@
 {
   "name": "react-beamer",
   "author": "Renan Souza <0renan.souza@gmail.com>",
-  "version": "1.0.5",
+  "homepage": "https://github.com/reenan/react-beamer",
+  "version": "1.0.6",
   "main": "index.js",
   "license": "MIT",
-  "keywords": ["react", "beamer", "getbeamer"],
+  "keywords": [
+    "react",
+    "beamer",
+    "getbeamer"
+  ],
   "private": false,
   "scripts": {
     "parse": "babel ./src --out-dir ./"
