@@ -15,20 +15,23 @@ var _ = require("../");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var BeamerHelmet = (_ref) => {
+var BeamerHelmet = _ref => {
   var {
     id,
-    url
+    url,
+    args
   } = _ref;
-  return /*#__PURE__*/_react.default.createElement(_reactHelmet.default, null, (0, _.beamerInitialize)(id, url));
+  return /*#__PURE__*/_react.default.createElement(_reactHelmet.default, null, (0, _.beamerInitialize)(id, url, args));
 };
 
 BeamerHelmet.propTypes = {
   id: _propTypes.default.string.isRequired,
-  url: _propTypes.default.string.isRequired
+  url: _propTypes.default.string.isRequired,
+  args: _propTypes.default.string.isRequired
 };
 BeamerHelmet.defaultProps = {
-  url: 'https://app.getbeamer.com/js/beamer-embed.js'
+  url: 'https://app.getbeamer.com/js/beamer-embed.js',
+  args: {}
 };
 var _default = BeamerHelmet;
 exports.default = _default;
