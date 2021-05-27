@@ -1,4 +1,4 @@
-export default function beamerInitialize(id, url = false) {
+export default function beamerInitialize(id, url = false, args = {}) {
   if (!window) {
     return;
   }
@@ -9,6 +9,7 @@ export default function beamerInitialize(id, url = false) {
 
   window.beamer_config = {
     product_id: id,
+    ...args,
   };
 
   const beamerURL = url || "https://app.getbeamer.com/js/beamer-embed.js";
