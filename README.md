@@ -12,7 +12,7 @@ import { BeamerHelmet } from 'react-beamer';
 
 [...]
 
-<BeamerHelmet id={productId} />
+<BeamerHelmet id={productId} url={url} args={args} />
 
 ```
 
@@ -22,7 +22,7 @@ import { beamerInitialize } from 'react-beamer';
 
 [...]
 
-beamerInitialize(productId);
+beamerInitialize(productId, url, args);
 
 ```
 :tada:
