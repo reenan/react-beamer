@@ -24,9 +24,9 @@ import { beamerInitialize } from 'react-beamer';
 
 beamerInitialize(productId, url, args);
 
+```
 PS: URL and args are optional
 
-```
 :tada:
 
 ### License
